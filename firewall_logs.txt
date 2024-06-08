@@ -1,0 +1,25 @@
+import configparser
+
+# Function to read configuration from config.ini
+def read_config():
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+    return config['Firewall']['blocked_ips'].split(',')
+
+    
+IP: 192.168.1.1
+DEVICE: Desktop
+TIME: 2024-06-07 22:07:44.551636
+
+IP: 192.168.1.1
+DEVICE: Desktop
+TIME: 2024-06-07 22:08:04.672747
+
+IP: 192.168.1.1
+DEVICE: Desktop
+TIME: 2024-06-07 22:08:08.901836
+
+IP: 192.168.1.1
+DEVICE: Desktop
+TIME: 2024-06-07 22:08:10.543611
+
